@@ -1,0 +1,260 @@
+.logo1 {
+    color: white;
+
+}
+
+.logo2 {
+    color: #6C63FF;
+}
+
+li {
+    font-size: clamp(16px, 1.2vw, 20px);
+    padding: 0vw 0.7vw 0vw 0.7vw;
+}
+
+li:hover {
+    box-shadow: 0 8px 20px rgba(0, 217, 255, 0.6);
+    border-radius: clamp(10px, 1vw, 20px);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+li:hover a {
+    color: white !important;
+}
+
+.body {
+    background-color: #262C35;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#carousel {
+    margin-top: 10px;
+    margin-bottom: 5vh;
+}
+
+#carousel .carousel-item img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    margin-bottom: 5rem;
+    font-size: clamp(24px, 5vw, 60px);
+    box-shadow: 0px 8px 20px #574ff0;
+}
+
+@media (max-width: 768px) {
+    .title {
+        padding-top: 8px;
+        font-weight: 20px;
+    }
+}
+
+.feature-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 6rem;
+}
+
+@media (min-width:990px) {
+    .feature-row {
+        flex-direction: row;
+        align-items: stretch;
+    }
+}
+
+.shop {
+    border-radius: clamp(12px, 3vw, 40px);
+    border: 1px solid rgb(0, 153, 255);
+    width: 80%;
+    max-width: 300px;
+    padding: 0.8rem 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: #6C63FF;
+    color: white;
+    display: inline-block;
+}
+
+.shop:hover {
+    box-shadow: 0 8px 20px rgba(0, 217, 255, 0.6);
+    background-color: rgb(121, 137, 211);
+    color: blue;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    background-color: black !important;
+    border: 1px solid blue !important;
+    border-radius: clamp(8px, 1.5vw, 20px) !important;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(100px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    object-fit: cover;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width:768px) {
+    .card-title {
+        font-size: 15px;
+    }
+}
+
+.product-column {
+    width: 46%;
+}
+
+
+.contact-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-section h1 {
+    font-size: 2.8em;
+    color: #6C63FF;
+}
+
+.contact-section p {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+
+.contact-info {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-form {
+    background: white;
+    padding: 25px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: 0.3s ease;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #6C63FF;
+    outline: none;
+    box-shadow: 0 0 5px #6C63FF;
+}
+
+.button {
+    width: 100%;
+    padding: 12px;
+    background: #6C63FF !important;
+    color: white !important;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #574ff0 !important;
+}
+
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+footer {
+    padding: 40px 0px;
+    background: #333;
+    color: white;
+    margin-top: auto;
+}
+
+footer a:hover {
+    color: #FFD700;
+}
+
+.foot_about {
+    font-size: 15px;
+    color: #a0aec0;
+    margin-top: 10px;
+}
+
+@media (max-width: 760px) {
+    .foot_about {
+        text-align: center;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+}
+
+.foot_links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.foot_links_color {
+    color: #574eff;
+    text-decoration-line: none;
+    font-weight: 500;
+}
+
+.foot_image {
+    width: 35px;
+    height: 35px;
+    margin: 10px 5px;
+    transition: transform 0.3s ease;
+}
+
+.foot_image:hover {
+    transform: scale(1.5);
+}
